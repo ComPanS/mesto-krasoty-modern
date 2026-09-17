@@ -1,20 +1,35 @@
-export type Service = {
-  slug: string
-  title: string
-  summary: string
-}
-
 export const site = {
-  name: 'Business name',
-  shortName: 'Business',
-  locale: 'en',
-  tagline: 'A faithful, modern redesign concept',
-  description: 'Replace this text only with facts verified on the source website.',
+  name: 'Место красоты',
+  shortName: 'Место красоты',
+  locale: 'ru',
+  tagline: 'Красота, к которой хочется возвращаться',
+  description: 'Салон красоты, ногтевая студия и парикмахерская в посёлке Плодородный.',
   contact: {
-    phone: '',
-    email: '',
-    address: '',
+    phone: '+7 (928) 232-24-92',
+    whatsapp: 'https://wa.me/79282322492',
+    address: 'Планерная улица, 13, посёлок Плодородный',
+    directions: 'https://yandex.ru/maps/org/213914523935',
   },
 }
 
-export const services: Service[] = []
+export const services = [
+  { title: 'Маникюр и покрытие', detail: 'Покрытие гель-лаком · от 1 500 ₽' },
+  { title: 'Педикюр', detail: 'Обработка стоп · от 800 ₽' },
+  { title: 'Стрижки', detail: 'Женская стрижка · от 500 ₽' },
+  { title: 'Окрашивание волос', detail: 'Окрашивание в один тон · от 2 500 ₽' },
+  { title: 'Восстановление волос', detail: 'Холодное восстановление · от 2 500 ₽' },
+  { title: 'Брови и ресницы', detail: 'Ламинирование и окрашивание ресниц · 2 000 ₽' },
+]
+
+export const photos = [
+  { src: '/media/salon-photo.jpg', alt: 'Интерьер салона красоты' },
+  { src: '/media/salon-exterior.jpg', alt: 'Вход в салон Место красоты' },
+  { src: '/media/review-detail.jpg', alt: 'Деталь пространства салона' },
+  { src: '/media/review-space.jpg', alt: 'Пространство салона' },
+]
+
+export const reviews = [
+  { quote: 'Маникюр выполнен идеально, дизайн и длина соответствуют референсу. Салон уютный, комфортный, расположение отличное.', author: 'Альбина М.' },
+  { quote: 'Приятный салон красоты, всё чисто и красиво. Сделали маникюр быстро и качественно.', author: 'Мария Цахоева' },
+  { quote: 'Прекрасные мастера, приятные цены и великолепное обслуживание!', author: 'Le ЧЕХАРДАААА' },
+]

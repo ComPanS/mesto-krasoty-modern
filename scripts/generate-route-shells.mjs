@@ -1,7 +1,7 @@
 import { cp, mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 
-const routes = ['/about', '/services', '/contact']
+const routes = []
 const dist = new URL('../dist/', import.meta.url).pathname
 
 for (const route of routes) {

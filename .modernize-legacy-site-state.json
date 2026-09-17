@@ -1,0 +1,10 @@
+{
+  "stage": 1,
+  "openingClassification": "website",
+  "sourceUrl": "https://mesto-krasoty-planernaja-ulitsa.clients.site/",
+  "supportingProfileUrl": "https://yandex.ru/maps/org/mesto_krasoty/213914523935/",
+  "implementedRoutes": ["/"],
+  "deferredRoutes": ["/prices/", "/gallery/", "/reviews/", "/news/"],
+  "sourceMobileStatus": "present",
+  "verifiedAt": "2026-09-17"
+}

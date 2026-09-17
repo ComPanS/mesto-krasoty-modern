@@ -1,29 +1,27 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { site } from '../content/site'
 
 const navigation = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/about', label: 'About' },
-  { to: '/services', label: 'Services' },
-  { to: '/contact', label: 'Contact' },
+  { to: '#about', label: 'О салоне' },
+  { to: '#services', label: 'Услуги' },
+  { to: '#reviews', label: 'Отзывы' },
+  { to: '#contacts', label: 'Контакты' },
 ]
 
 export function SiteLayout() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <NavLink className="brand" to="/">{site.shortName}</NavLink>
-        <nav aria-label="Main navigation">
-          {navigation.map(({ to, label, end }) => (
-            <NavLink key={to} to={to} end={end} className={({ isActive }) => isActive ? 'active' : undefined}>
-              {label}
-            </NavLink>
-          ))}
+        <a className="brand" href="#top" aria-label="Место красоты, в начало">{site.shortName}</a>
+        <nav aria-label="Основная навигация">
+          {navigation.map(({ to, label }) => <a key={to} href={to}>{label}</a>)}
         </nav>
+        <a className="header-phone" href={`tel:${site.contact.phone.replace(/[^\d+]/g, '')}`}>{site.contact.phone}</a>
       </header>
       <main><Outlet /></main>
       <footer className="site-footer">
-        <p>{site.name} — independent redesign concept.</p>
+        <p>{site.name} · Краснодар · Планерная, 13</p>
+        <a href={site.contact.whatsapp}>Написать в WhatsApp ↗</a>
       </footer>
     </div>
   )

@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "validate:links": "node scripts/validate-links.mjs",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -b && vite build && node scripts/generate-route-shells.mjs",
+    "build": "npm run validate:links && tsc -b && vite build && node scripts/generate-route-shells.mjs",
     "preview": "vite preview",
     "publish:github": "bash scripts/publish-github.sh"
   },
