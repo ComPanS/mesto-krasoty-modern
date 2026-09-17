@@ -14,7 +14,7 @@ nav a:hover, .text-link:hover, .contact-route:hover { color: var(--accent); }
 .header-phone { font-size: .75rem; font-weight: 700; white-space: nowrap; }
 main { overflow: hidden; }
 .hero, .section { width: min(1280px, calc(100% - 64px)); margin-inline: auto; }
-.hero { min-height: 100vh; padding: 72px 0 90px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr); gap: clamp(50px, 8vw, 130px); align-items: center; }
+.hero { height: 100vh; max-height: 100vh; padding: 72px 0 90px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr); gap: clamp(50px, 8vw, 130px); align-items: center; }
 .hero-copy { max-width: 550px; }
 .logo { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; margin-bottom: 32px; }
 .kicker, .section-label, .image-caption, .contact-note span { text-transform: uppercase; letter-spacing: .14em; font-size: .67rem; font-weight: 800; color: var(--muted); }
